@@ -1,0 +1,339 @@
+/* Menu đầu trang */
+.menu {
+  width: 100%;
+  background: linear-gradient(90deg, #fefefe 0%, #ffffff 100%);
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 2px 12px rgba(255, 78, 80, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.menu li a {
+  color: #ff4e50;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu li a:hover {
+  color: #f9d423;
+  text-shadow: 0 2px 8px #fcb69f;
+}
+
+/* Hiệu ứng icon rơi */
+/* Hiệu ứng icon rơi nâng cao */
+.icon-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.rain-icon {
+  position: absolute;
+  top: -2rem;
+  animation: rain 4s linear infinite;
+  opacity: 0.8;
+  filter: drop-shadow(0 2px 4px #ff4e50);
+  will-change: transform, opacity;
+}
+
+@keyframes rain {
+  0% {
+    top: -2rem;
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  60% {
+    opacity: 0.9;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    top: 100vh;
+    opacity: 0.2;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive cho mobile */
+@media (max-width: 600px) {
+  #root {
+    max-width: 100vw;
+    padding: 0.5rem;
+  }
+
+  .graduation-invite {
+    padding: 1rem 0.2rem;
+    gap: 1rem;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu ul {
+    gap: 1rem;
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .info,
+  .story,
+  .joke,
+  .confirm {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  .confirm-btn {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+  }
+}
+
+/* Màu sắc dịu hơn, thân thiện hơn */
+.graduation-invite {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 12px 40px 0 rgba(255, 88, 88, 0.10), 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+.banner {
+  background: #ffe5e5;
+  box-shadow: 0 2px 12px rgba(255, 88, 88, 0.10);
+}
+
+.info {
+  background: #fff;
+  color: #ee3636;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+
+.info ul,
+.info li {
+  color: #ee3636;
+}
+
+.info li strong {
+  color: #ee3636;
+  font-weight: bold;
+  border-bottom: 2px solid #ee3636;
+  padding-bottom: 2px;
+}
+
+.info li {
+  font-weight: bold;
+}
+
+
+.story {
+  background: #f0f7ff;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+
+.joke {
+  background: #fff0f6;
+  box-shadow: 0 2px 8px rgba(255, 88, 88, 0.08);
+}
+
+.confirm {
+  background: #fffbe6;
+  box-shadow: 0 2px 8px rgba(255, 88, 88, 0.04);
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ee3636 0%, #a93e3e 100%);
+  min-height: 100vh;
+  font-family: 'Quicksand', 'Segoe UI', 'Arial', sans-serif;
+}
+
+#root {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.graduation-invite {
+  background: #fffbe6;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid #ee3636;
+}
+
+.banner,
+.info,
+.story,
+.joke,
+.confirm {
+  border: 1.5px solid #ee3636;
+}
+
+.banner h1,
+.info h2,
+.story h2,
+.joke h2,
+.confirm h2 {
+  border-bottom: 2px solid #ee3636;
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.banner {
+  background: #fff1a8;
+  border-radius: 18px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 12px rgba(255, 78, 80, 0.08);
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  color: #ff4e50;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Pacifico', cursive, sans-serif;
+}
+
+.banner-desc {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.info {
+  background: #e0ffe0;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(249, 212, 35, 0.08);
+}
+
+.info h2 {
+  color: #2ecc71;
+  margin-bottom: 0.5rem;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info li {
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+}
+
+.story {
+  background: #e0f7fa;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.story h2 {
+  color: #00bcd4;
+}
+
+.story p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.joke {
+  background: #ffe0e0;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(255, 78, 80, 0.08);
+}
+
+.joke h2 {
+  color: #ff4e50;
+}
+
+.joke blockquote {
+  font-size: 1.1rem;
+  color: #ff4e50;
+  background: #fff;
+  border-left: 4px solid #ff4e50;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+
+.confirm {
+  background: #fffbe6;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(249, 212, 35, 0.08);
+}
+
+.confirm h2 {
+  color: #f9d423;
+}
+
+.confirm-btn {
+  background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7em 2em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(255, 78, 80, 0.12);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.confirm-btn:hover {
+  background: linear-gradient(90deg, #f9d423 0%, #ff4e50 100%);
+  color: #ff4e50;
+  transform: scale(1.05);
+}
+
+.note {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 0.5em;
+}
+
+.footer {
+  margin-top: 2rem;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.details p {
+  margin: 0.5em 0;
+  font-size: 1.1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  color: #888;
+  font-size: 1rem;
+}

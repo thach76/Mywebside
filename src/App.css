@@ -1,3 +1,157 @@
+.card-flower-left {
+  top: 50%;
+  left: -38px;
+  transform: translateY(-50%) rotate(-90deg);
+  background-image: url('/img/pngwing.com.png');
+}
+
+.card-flower-right {
+  top: 50%;
+  right: -38px;
+  transform: translateY(-50%) scaleX(-1) rotate(-90deg);
+  background-image: url('/img/pngwing.com.png');
+}
+
+/* Wedding Card Style */
+.wedding-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card-border {
+  background: #1a2340;
+  border-radius: 18px;
+  border: 3px solid #e0b973;
+  box-shadow: 0 8px 32px rgba(26, 35, 64, 0.18);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  max-width: 350px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-content {
+  color: #fff;
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.card-header {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #e0b973;
+  margin-bottom: 1.2rem;
+}
+
+.card-names {
+  font-family: 'Dancing Script', 'Pacifico', cursive, sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.groom,
+.bride {
+  color: #e0b973;
+  font-weight: bold;
+}
+
+.and {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: inherit;
+}
+
+.card-invite {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.card-details {
+  margin-bottom: 1.2rem;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.1rem;
+  color: #e0b973;
+  margin-bottom: 0.3rem;
+}
+
+.card-date {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.card-label,
+.card-time {
+  color: #e0b973;
+  font-weight: bold;
+}
+
+.card-address {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.card-footer {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #e0b973;
+  font-style: italic;
+}
+
+/* Hoa góc */
+.card-flower {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+.card-flower-top {
+  top: -18px;
+  left: -18px;
+  background-image: url('/img/pngwing.com.png');
+}
+
+.card-flower-bottom {
+  bottom: -18px;
+  right: -18px;
+  background-image: url('/img/pngwing.com.png');
+  transform: scaleX(-1) scaleY(-1);
+}
+
+@media (max-width: 600px) {
+  .wedding-card .card-border {
+    padding: 1.2rem 0.2rem 1rem 0.2rem;
+    max-width: 98vw;
+  }
+
+  .card-names {
+    font-size: 1.2rem;
+  }
+
+  .card-date {
+    font-size: 1.3rem;
+  }
+}
+
 /* Menu đầu trang */
 .menu {
   width: 100%;

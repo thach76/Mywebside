@@ -63,11 +63,12 @@ function App() {
         <h2>Thông tin sự kiện</h2>
         <ul>
           <li>
-            <strong>Thời gian:</strong> 8:00 AM, 30/07/2025
+            <strong>Thời gian:</strong> 8:00 AM, 08/08/2025
           </li>
           <li>
-            <strong>Địa điểm:</strong> Hội trường lớn, Trường Đại học Meme
+            <strong>Địa điểm:</strong> Hội trường lớn, Trường Đại học Meme🐧🤡
           </li>
+          <li>(Đùa thôi: Đại Học Công Nghiệp Quảng Ninh)</li>
           <li>
             <strong>Dress code:</strong> Lịch sự, tươi vui, sẵn sàng selfie!
           </li>
@@ -94,10 +95,108 @@ function App() {
       </section>
       <section className="confirm" id="confirm">
         <h2>Xác nhận tham dự</h2>
-        <button className="confirm-btn" onClick={() => window.open("https://www.youtube.com/watch?v=l-KBYXMJhp4", "_blank")}>Tôi sẽ tham dự 🎉</button>
+        <button
+          className="confirm-btn"
+          onClick={() =>
+            window.open(
+              "https://www.facebook.com/messages/t/hoang.van.thach.382516",
+              "_blank"
+            )
+          }
+        >
+          Tôi sẽ tham dự 🎉
+        </button>
         <p className="note">
           Hãy xác nhận để chúng tôi chuẩn bị chu đáo cho bạn!
         </p>
+      </section>
+      {/* Thiệp mời phong cách thiệp cưới */}
+      <section className="wedding-card">
+        <div className="card-border">
+          <div className="card-flower card-flower-top"></div>
+          <div className="card-flower card-flower-bottom"></div>
+          <div className="card-flower card-flower-left"></div>
+          <div className="card-flower card-flower-right"></div>
+          <div className="card-content">
+            <div className="card-header">TOGETHER WITH THEIR FAMILIES</div>
+            <div className="card-names">
+              <span
+                className="groom"
+                style={{
+                  fontFamily: "Great Vibes, cursive",
+                  fontSize: "2.2rem",
+                  fontWeight: 700,
+                  color: "#e0b973",
+                  letterSpacing: "1px",
+                }}
+              >
+                Hoàng Văn Thạch
+              </span>
+              <span
+                className="and"
+                style={{
+                  fontFamily: "Great Vibes, cursive",
+                  fontSize: "2.2rem",
+                  color: "#fff",
+                  margin: "0 0.3rem",
+                }}
+              >
+                {" "}
+                &amp;{" "}
+              </span>
+              <span
+                className="bride"
+                style={{
+                  fontFamily: "Great Vibes, cursive",
+                  fontSize: "2.2rem",
+                  fontWeight: 700,
+                  color: "#e0b973",
+                  letterSpacing: "1px",
+                }}
+              >
+                Tốt Nghiệp
+              </span>
+            </div>
+            <div className="card-invite">
+              <span
+                style={{
+                  fontFamily: "Dancing Script, Pacifico, cursive",
+                  fontSize: "1.3rem",
+                  fontWeight: 600,
+                  color: "#fff",
+                  letterSpacing: "0.5px",
+                  textShadow: "0 1px 4px #1a2340",
+                }}
+              >
+                Trân trọng kính mời bạn đến dự lễ nhận bằng tốt nghiệp
+              </span>
+            </div>
+            <div className="card-details">
+              <div className="card-row">
+                <span className="card-label">FRIDAY</span>
+                <span className="card-date">08</span>
+                <span className="card-label">AUG</span>
+                <span className="card-time">AT 8:00 AM</span>
+              </div>
+              <div className="card-row card-address">
+                <span
+                  style={{
+                    fontFamily: "Montserrat, Arial, sans-serif",
+                    fontWeight: 600,
+                    color: "#fff",
+                    letterSpacing: "0.5px",
+                  }}
+                >
+                  Hội trường lớn, Đại Học Công Nghiệp Quảng Ninh
+                </span>
+              </div>
+            </div>
+            <div className="card-footer">
+              Hãy cùng chúng tôi tạo nên những kỷ niệm tuyệt vời trong ngày đặc
+              biệt này!
+            </div>
+          </div>
+        </div>
       </section>
       <footer className="footer">
         <p>Chúc mừng tất cả tân cử nhân! Hẹn gặp bạn tại lễ tốt nghiệp!</p>
